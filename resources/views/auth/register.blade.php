@@ -42,7 +42,8 @@ id="username"
 name="username"
 type="text"
 placeholder="Tu nombre de Usuario"
-class="border p-3 w-full rounded-lg"
+class="border p-3 w-full rounded-lg @error('username') border-red-500 
+    @enderror"
 
 />
 @error('username')
@@ -60,7 +61,8 @@ id="email"
 name="email"
 type="email"
 placeholder="Tu email de Registro"
-class="border p-3 w-full rounded-lg"
+class="border p-3 w-full rounded-lg @error('email') border-red-500 
+    @enderror"
 
 />
 @error('email')
@@ -78,7 +80,8 @@ id="password"
 name="password"
 type="password"
 placeholder="Password de registro"
-class="border p-3 w-full rounded-lg"
+class="border p-3 w-full rounded-lg @error('password') border-red-500 
+    @enderror"
 
 />
 @error('password')
