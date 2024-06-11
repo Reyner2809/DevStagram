@@ -20,5 +20,10 @@ public function index(User $user){
       'user'=>$user
     ]);
 }
+public function create()
+{
+  return view('posts.create');
+}
+
 
 }
